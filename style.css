@@ -28,14 +28,46 @@ h3 {
   margin: 1.5rem 0 1rem 0;
   color: #22272e;
 }
-ul, ol, ls {
+ul, ol {
   padding-left: 0;
   margin-left: 0;
-  list-style-position: inside;
+  list-style: none;
 }
 li {
   margin-bottom: 0.5rem;
   line-height: 1.6;
+  position: relative;
+  padding-left: 1.5em;
+}
+li::before {
+  content: '\2022';
+  position: absolute;
+  left: 0;
+  color: #22272e;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.main-menu {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.5rem 0 1.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.main-menu a {
+  color: #22272e;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 400;
+}
+.main-menu a:hover, .main-menu a:focus {
+  background: #e5e8ec;
+  color: #1a73e8;
 }
 
 @media (max-width: 600px) {
@@ -43,6 +75,11 @@ li {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     max-width: 100%;
+  }
+  .main-menu {
+    gap: 1rem;
+    font-size: 1rem;
+    padding: 1rem 0 1rem 0;
   }
 }
 
@@ -53,5 +90,15 @@ li {
   }
   h1, h2, h3 {
     color: #f5f8fa;
+  }
+  li::before {
+    color: #f5f8fa;
+  }
+  .main-menu a {
+    color: #f5f8fa;
+  }
+  .main-menu a:hover, .main-menu a:focus {
+    background: #23272f;
+    color: #90caf9;
   }
 }
