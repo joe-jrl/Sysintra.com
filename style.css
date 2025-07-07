@@ -1,0 +1,52 @@
+/* Inspired by Backstage.io docs, with dark mode support and responsive margins */
+body {
+  background: #f5f8fa;
+  color: #22272e;
+  font-family: 'Cambria', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0 1.5rem 2rem 1.5rem;
+  max-width: 900px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+  color: #22272e;
+}
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  color: #22272e;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 1.5rem 0 1rem 0;
+  color: #22272e;
+}
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #151a21;
+    color: #f5f8fa;
+  }
+  h1, h2, h3 {
+    color: #f5f8fa;
+  }
+}
