@@ -105,3 +105,49 @@
   letter-spacing: 0;
   line-height: normal;
 }
+
+/* About Me Lanbel Styles */
+
+.label {
+  width: 220px;
+  height: 58px;
+}
+
+.label .text-wrapper {
+  position: relative;
+  top: 160px;
+  left: 120px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Text section from the About page */
+.text-detail {
+  position: relative;
+  top: 281px;
+  left: 120px;
+  width: 640px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+
+.about-me-box {
+
+  background-image: url("img/about-me-background.svg");
+  background-size: cover;
+  position: absolute;
+  width: 1024px;
+  height: 1024px;
+}
+
+.box {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+}
