@@ -236,7 +236,7 @@ body {
 .story-box {
   width: 100%;
   position: static;
-  margin-top: 2rem;
+  /*margin-top: 2rem;*/
 
   /*max-width: 896px;*/
 }
@@ -284,3 +284,11 @@ body {
   flex-direction: column; 
   align-items: center;
 }*/
+
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 24px; /* adjust as needed */
+    height: 50%; /* half the height on mobile */
+    padding: 0.5em 0;
+  }
+}
