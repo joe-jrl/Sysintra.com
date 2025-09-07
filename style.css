@@ -288,7 +288,14 @@ body {
 @media (max-width: 600px) {
   .page-title {
     font-size: 24px; /* adjust as needed */
-    height: 10%; /* half the height on mobile */
+    height: 0%; /* half the height on mobile */
     padding: 0.5em 0;
   }
+
+  .page-title {
+    font-size: 24px; /* adjust as needed */
+    height: 0%; /* half the height on mobile */
+    padding: 0.5em 0;
+  }
+
 }
