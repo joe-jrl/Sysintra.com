@@ -113,9 +113,10 @@
   box-sizing: border-box;
 }
 
+/*
 body {
   font-family: "Inter-Regular", Helvetica;
-  /*background-color: #ffffff; */
+ 
   color: #000000;
   height: 100vh;
   overflow: hidden;
@@ -128,16 +129,13 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  
-  /*align-items: center*/
-
-}
+}*/
 
 .label {
   width: 220px;
   height: 58px;
 }
-
+/*
 .page-title{
   width: 25vh;
   height: auto;
@@ -150,7 +148,7 @@ body {
   top: 25vh;
   left: 18vw;
   width: 50vw;
-}
+}*/
 
 .label .text-wrapper {
   position: relative;
@@ -167,16 +165,8 @@ body {
 body {
   font-family: "Inter-Regular", Helvetica;
   color: #000000;
-  height: 100vh;
-  overflow: hidden;
-
-  background-image: url("img/about-me-background.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  overflow-y: auto;
 
   margin: 0;
 
@@ -184,37 +174,88 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; /* horizontally */
-  align-items: center;     /* vertically */
-  min-height: 100vh;
+  align-items: center;    /* vertically */
+
 
 }
 
-.page-title {
-  width: 60vw;
+.about-me-content {
+  background-image: url("img/about-me-background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  
+  min-height: 100vh;
   height: auto;
-  font-size: 7vh;
+  width: 100%;
+  max-width: 1024px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;    /* vertically */
+
+  background-attachment: fixed;
+  overflow-y: auto;
+  
+}
+
+.container{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  height: auto;
+  width: 60vw;
+  max-width: 750px;
+}
+
+.header{
+
+  height: 10vh;
+  width: 100%;
+  /*max-width: 1024px;*/
+}
+
+.page-title {
+  width: 100%;
+  height: auto;
+  font-size: clamp(32px, 7vw, 48px);
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
   text-align: left;
   position: static;
+
+  /*max-width: 750px;*/
 }
 
 .story-box {
-  width: 60vw;
+  width: 100%;
   position: static;
   margin-top: 2rem;
+
+  /*max-width: 896px;*/
 }
 
 .story-text {
   font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
-  font-size: 4vh;
+  font-size: clamp(24px, 4vw, 32px);
   color: #000000;
   text-align: left;
 }
 
+.footer{
+  height: 10vh;
+  width: 100%;
+  /*max-width: 1024px;*/
+}
 
+/*
 .page-content {
   display: flex;
   flex-direction: column;
@@ -225,7 +266,7 @@ body {
   width: 60vw;
   max-width: 800px;
   margin: 0 auto;
-}
+}*/
 
 
 /*
