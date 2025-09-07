@@ -189,22 +189,10 @@ body {
 
 }
 
-.page-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh;
-  padding-top: 25vh;
-  width: 60vh;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 .page-title {
-  width: 80vh;
+  width: 60vw;
   height: auto;
-  font-size: 48px;
+  font-size: 7vh;
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
@@ -213,7 +201,7 @@ body {
 }
 
 .story-box {
-  width: 80vh;
+  width: 60vw;
   position: static;
   margin-top: 2rem;
 }
@@ -221,21 +209,37 @@ body {
 .story-text {
   font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 4vh;
   color: #000000;
   text-align: left;
 }
 
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 25vh;
+  width: 60vw;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+/*
 .about-me-box {
 
   background-image: url("img/about-me-background.svg");
   background-size: cover;
   height: 100vh;
   width: 100vh;
-}
+}*/
 
+/*
 .box {
   display: flex; 
   flex-direction: column; 
   align-items: center;
-}
+}*/
