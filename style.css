@@ -108,9 +108,48 @@
 
 /* About Me Lanbel Styles */
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter-Regular", Helvetica;
+  /*background-color: #ffffff; */
+  color: #000000;
+  height: 100vh;
+  overflow: hidden;
+
+  background-image: url("img/about-me-background.svg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vh;
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  
+  /*align-items: center*/
+
+}
+
 .label {
   width: 220px;
   height: 58px;
+}
+
+.page-title{
+  width: 25vh;
+  height: auto;
+  font-size:48px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  
+  position: relative;
+  top: 25vh;
+  left: 18vw;
+  width: 50vw;
 }
 
 .label .text-wrapper {
@@ -124,26 +163,75 @@
   letter-spacing: 0;
   line-height: normal;
 }
+/*page body*/
+body {
+  font-family: "Inter-Regular", Helvetica;
+  color: #000000;
+  height: 100vh;
+  overflow: hidden;
 
-/* Text section from the About page */
-.text-detail {
-  position: relative;
-  top: 281px;
-  left: 120px;
-  width: 640px;
+  background-image: url("img/about-me-background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  height: 100vh;
+  width: 100vw;
+
+  margin: 0;
+
+  /* Centering the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* horizontally */
+  align-items: center;     /* vertically */
+  min-height: 100vh;
+
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 25vh;
+  width: 60vh;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.page-title {
+  width: 80vh;
+  height: auto;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: left;
+  position: static;
+}
+
+.story-box {
+  width: 80vh;
+  position: static;
+  margin-top: 2rem;
+}
+
+.story-text {
   font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
   font-size: 32px;
   color: #000000;
+  text-align: left;
 }
 
 .about-me-box {
 
   background-image: url("img/about-me-background.svg");
   background-size: cover;
-  position: absolute;
-  width: 1024px;
-  height: 1024px;
+  height: 100vh;
+  width: 100vh;
 }
 
 .box {
