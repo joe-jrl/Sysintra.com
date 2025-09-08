@@ -161,6 +161,8 @@ body {
   letter-spacing: 0;
   line-height: normal;
 }
+
+
 /*page body*/
 body {
   font-family: "Inter-Regular", Helvetica;
@@ -179,11 +181,18 @@ body {
 
 }
 
-.about-me-content {
+
+
+/* About Me Backgroud */
+.about-me-background {
   background-image: url("img/about-me-background.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat; 
+}
+
+/* general background container sylyes that are used across all the pages*/
+.background {
   
   min-height: 100vh;
   height: auto;
@@ -196,8 +205,7 @@ body {
   align-items: center;    /* vertically */
 
   background-attachment: fixed;
-  overflow-y: auto;
-  
+  overflow-y: auto; 
 }
 
 .container{
@@ -296,6 +304,14 @@ body {
     font-size: 24px; /* adjust as needed */
     height: 0%; /* half the height on mobile */
     padding: 0.5em 0;
+  }
+
+  /* About Me Backgroud */
+  .about-me-background {
+    background-image: url("img/about-me-background.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
   }
 
 }
