@@ -1,112 +1,4 @@
-/* Initial Styles from the Figma Design */
 
-.frame {
-  background-color: #ffffff;
-  display: grid;
-  justify-items: center;
-  align-items: start;
-  width: 100vw;
-}
-
-.frame .div {
-  background-color: #ffffff;
-  overflow: hidden;
-  border: 1px solid;
-  border-color: #0000001a;
-  width: 1440px;
-  height: 1024px;
-  position: relative;
-}
-
-.frame .untitled {
-  position: absolute;
-  width: 903px;
-  height: 602px;
-  top: 193px;
-  left: 281px;
-  aspect-ratio: 1.5;
-  object-fit: cover;
-}
-
-.frame .about-me {
-  position: absolute;
-  width: 147px;
-  height: 39px;
-  top: 118px;
-  left: 281px;
-}
-
-.frame .text-wrapper {
-  position: absolute;
-  top: -1px;
-  left: 0;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.frame .text-wrapper-2 {
-  position: absolute;
-  top: 117px;
-  left: 518px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.frame .text-on-a-path {
-  position: absolute;
-  width: 731px;
-  height: 98px;
-  top: 1174px;
-  left: -1689px;
-  object-fit: cover;
-}
-
-.frame .life-begins-on-the {
-  position: absolute;
-  top: 818px;
-  left: 458px;
-  text-shadow: 0px 4px 4px #00000040;
-  font-family: "Khula-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.frame .text-wrapper-3 {
-  position: absolute;
-  top: 117px;
-  left: 920px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.frame .text-wrapper-4 {
-  position: absolute;
-  top: 117px;
-  left: 720px;
-  font-family: "Inter-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 32px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-/* About Me Lanbel Styles */
 
 * {
   margin: 0;
@@ -118,18 +10,6 @@
 body {
   font-family: "Inter-Regular", Helvetica;
   color: #000000;
-  
-  /*min-height: 100vh;*/
-  /*overflow-y: auto;*/
-
-  /*margin: 0 ;*/
-
-  /* Centering the container */
-  
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 
 }
 
@@ -178,20 +58,9 @@ body {
 /* general background container sylyes that are used across all the pages*/
 .background {
   
-  /*
-  height: auto;
-  width: auto;*/
   min-height: 100vh;
   width: 100%;
   max-width: 1024px;
-
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: top;*/  /* vertically */
-
-  /*background-attachment: fixed;*/
-  /*overflow-y: auto; */
 
   margin: 0 auto;
 
@@ -223,7 +92,6 @@ body {
   position: relative; 
   height: 10vh;
   width: 100%;
-  /*max-width: 1024px;*/
   margin: 0 auto;
 
   display: flex;
@@ -235,14 +103,6 @@ body {
 
 .nav-bar {
 
-  /*width: 100%;
-  height: auto;
-  margin: 0 auto;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;*/
-
   width: 100%;
   display: flex;
   flex-wrap: wrap; 
@@ -252,15 +112,11 @@ body {
 
 .nav-bar ul {
   list-style: none;
-  /*margin: 0;*/
   padding: 0;
 
   display: flex;
   flex-wrap: wrap; 
   justify-content: space-between; /* spread items evenly */
-
-  /*gap: 1rem;*/
-  /*align-items: center;*/
 
   width: 100%;
 }
@@ -286,13 +142,11 @@ body {
   text-align: left;
   position: static;
 
-  /*max-width: 750px;*/
 }
 
 .story-box {
   width: 100%;
   position: static;
-  /*margin-top: 2rem;*/
 
   max-width: 600px;
 }
@@ -308,7 +162,6 @@ body {
 .footer{
   height: 10vh;
   width: 100%;
-  /*max-width: 1024px;*/
 
   display: flex;
   justify-content: center; /* horizontally */
