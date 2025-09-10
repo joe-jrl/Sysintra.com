@@ -1,3 +1,15 @@
+
+
+/***************************************************************************
+ *       Global Styles                                                                  
+ ***************************************************************************/
+
+:root {
+    --fixed-width: 1024px; /* Define a constant width */
+    --content-width: 60vw; /* Define a constant width */
+}
+
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -6,27 +18,15 @@
 
 }
 
+/***************************************************************************
+ *       Page Body Styles                                                                  *                                                                  
+ ***************************************************************************/
+
 /*page body*/
 body {
   font-family: "Inter-Regular", Helvetica;
   color: #000000;
 
-}
-
-
-/* About Me Backgroud */
-.about-me-background {
-  background-image: url("img/about-me-background.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat; 
-}
-
-.bread-background {
-  background-image: url("img/bread-background.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; 
 }
 
 /* Home Page image box*/
@@ -47,18 +47,9 @@ body {
   display: block;      /* remove inline spacing */
 }
 
-.quote {
-
-  text-shadow: 0px 4px 4px #00000040;
-  font-family: "Khula-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: clamp(12px, 3vw, 32px);
-  letter-spacing: 0;
-  line-height: normal;
-  text-align: center;
-
-}
+/***************************************************************************
+ *       Background Styles                                                                  
+ ***************************************************************************/
 
 /* general background container sylyes that are used across all the pages*/
 .background {
@@ -80,6 +71,32 @@ body {
    max-width: 1024px;
 }
 
+/* About Me Backgroud */
+.about-me-background {
+  background-image: url("img/about-me-background.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.bread-background {
+  background-image: url("img/bread-background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.roots-background {
+  background-image: url("img/roots-background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+/***************************************************************************
+ *       Container Styles                                                                  
+ ***************************************************************************/
+
 .container {
   display: flex;
   flex-direction: column;
@@ -97,11 +114,13 @@ body {
   justify-content: center;
   
   margin: 0 auto; /* balances the left and right margins to center the elements in the container*/
+  
 }
 
 .container-fixed{
   max-width: 1024px;
   width: 60vw;
+
 }
 
 
@@ -112,6 +131,10 @@ body {
   display: block;
   max-width: 100%;
 }
+
+/***************************************************************************
+ *       Header Styles                                                                  
+ ***************************************************************************/
 
 .header{
 
@@ -127,12 +150,34 @@ body {
   
 }
 
+.header-base{
+
+  position: relative; 
+  height: 5vh;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/***************************************************************************
+ *       Nav Styles                                                                  
+ ***************************************************************************/
+
 .nav-bar {
 
   width: 100%;
   display: flex;
   flex-wrap: wrap; 
   justify-content: space-between; /* spread items evenly */
+
+  outline: 2px solid rgb(64, 229, 18);
+  position: relative;
+  z-index: 1000;
 
 }
 
@@ -145,9 +190,13 @@ body {
   justify-content: space-between; /* spread items evenly */
 
   width: 100%;
+
 }
 
 .nav-bar li a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+
   text-decoration: none;
   font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
@@ -156,17 +205,157 @@ body {
   align-items: center; 
 }
 
-.story-title {
-  width: 100%;
-  height: auto;
-  font-size: clamp(32px, 7vw, 48px); /* 7vw is probably less than 32px so this doesnt seem to have any effect*/
-  font-weight: 300;
-  letter-spacing: 0;
-  line-height: normal;
-  text-align: left;
-  position: static;
+.nav-bar li a:hover{
+  outline: 1px solid red;
+}
+
+.has-submenu {
+  position: relative;
+}
+
+/* Show submenu on hover */
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+/* Submenu hidden by default */
+.nav-bar .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;             /* just below the parent item */
+  left: 0;
+  background: #fff;
+  padding: 0.5rem 0;
+  list-style: none;
+  margin: 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  min-width: 200px;
+  z-index: 1000;
+}
+
+/* Submenu items */
+.nav-bar .submenu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
 
 }
+
+.nav-bar .submenu li a:hover {
+  background: #f2f2f2;
+}
+
+/***************************************************************************
+ *       Nav Challenger Styles                                                                  
+ ***************************************************************************/
+
+.main-nav {
+  /*background: #fafafa;*/
+  /*padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;*/
+
+  /* keeps nav above other stuff if needed */
+  position: relative;
+  z-index: 100;
+
+}
+
+.main-nav-fixed {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+/* Main nav list */
+.main-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 1rem;
+}
+
+
+.main-nav-list-fixed {
+  justify-content: space-between;
+}
+
+/* Nav items */
+.main-nav-item {
+  position: relative; /* needed for submenu positioning */
+}
+
+/* Links */
+.main-nav-link {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: #000;
+  transition: background 0.2s, color 0.2s;
+
+  font-family: "Inter-Regular", Helvetica;
+  
+  /*font-weight: 300;*/
+  font-size: clamp(14px, 3vw, 32px);  /* responsive font */
+}
+
+.main-nav-link:hover,
+.main-nav-link:focus {
+  background: #eee;
+  color: #333;
+  outline: none;
+}
+
+/* ==========================
+   SUBMENU
+   ========================== */
+
+.main-submenu {
+  display: none; /* hidden by default */
+  position: absolute;
+  top: 100%; /* directly under parent item */
+  left: 0;
+
+  background: #fff;
+  border: 1px solid #ddd;
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  min-width: 200px;
+  z-index: 200;
+}
+
+.main-submenu-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #000;
+  font-size: clamp(12px, 1vw, 16px);  /* responsive font */
+  transition: background 0.2s;
+}
+
+.main-submenu-link:hover,
+.main-submenu-link:focus {
+  background: #f2f2f2;
+  outline: none;
+}
+
+/* Show submenu on hover */
+.has-submenu:hover .main-submenu {
+  display: block;
+}
+
+
+
+/***************************************************************************
+ *       Story Box Styles                                                                  
+ ***************************************************************************/
 
 .story-box {
   width: 100%;
@@ -181,8 +370,19 @@ body {
 }
 
 .story-box-fixed {
-
   max-width: 600px;
+}
+
+.story-title {
+  width: 100%;
+  height: auto;
+  font-size: clamp(32px, 7vw, 48px); /* 7vw is probably less than 32px so this doesnt seem to have any effect*/
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: left;
+  position: static;
+
 }
 
 .story-text {
@@ -192,7 +392,6 @@ body {
   color: #000000;
   text-align: left;
 }
-
 
 .story-text-columns h2{
   font-family: "Inter-Regular", Helvetica;
@@ -242,6 +441,10 @@ body {
   box-sizing: border-box;
 }
 
+/***************************************************************************
+ *       Footer Styles                                                                  
+ ***************************************************************************/
+
 .footer{
   height: 10vh;
   width: 100%;
@@ -250,6 +453,23 @@ body {
   justify-content: center; /* horizontally */
   align-items: center;    /* vertically */
 }
+
+.quote {
+
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Khula-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: clamp(12px, 3vw, 32px);
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+
+}
+
+/***************************************************************************
+ *       Responsive Styles                                                                  
+ ***************************************************************************/
 
 @media (max-width: 900px) {
   .container {

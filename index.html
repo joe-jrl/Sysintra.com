@@ -13,14 +13,23 @@
         <div class="container">
             <div class="header">
 
-                <nav class="nav-bar">
-                    <ul>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="bread.html">Stories</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#share">Your Story</a></li>
+                <nav class="main-nav main-nav-fixed">
+                    <ul class="main-nav-list main-nav-list-fixed">
+                    <li class="main-nav-item"><a href="about.html" class="main-nav-link">About Me</a></li>
+
+                    <li class="main-nav-item has-submenu">
+                        <a href="#" class="main-nav-link">Stories</a> <!-- ▾-->
+                        <ul class="main-submenu">
+                        <li><a href="bread.html" class="main-submenu-link">Bread and Butter</a></li>
+                        <li><a href="roots.html" class="main-submenu-link">Roots and Wings</a></li>
+                        <li><a href="#" class="main-submenu-link">Mama in the Village</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="main-nav-item"><a href="#" class="main-nav-link">Gallery</a></li>
+                    <li class="main-nav-item"><a href="#" class="main-nav-link">Your Story</a></li>
                     </ul>
-                </nav>
+                </nav>      
 
             </div>
 
@@ -37,26 +46,5 @@
         </div>
 
     </div>
-
-
-    <!--div class="frame">
-      <div class="div">
-        <img class="untitled" src="img/annabels-blog.svg" />
-        <div class="about-me">
-            <a  class="text-wrapper" href="about.html">About Me</a>
-        </div>
-        <div class="text-wrapper-2">Stories</div>
-        <div class="image"><img class="untitled" src="img/annabels-blog.svg" /></div>
-        <p class="life-begins-on-the">
-          “Life begins on the other side of despair “
-          <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jean-Paul
-          Sartre
-        </p>
-        <div class="text-wrapper-3">Share your story</div>
-        <div class="text-wrapper-4">Gallery</div>
-      </div>
-    </div!-->
-
-    
   </body>
 </html>
