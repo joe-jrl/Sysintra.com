@@ -93,6 +93,13 @@ body {
   background-repeat: no-repeat; 
 }
 
+.mama-background {
+  background-image: url("img/mama-background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
 /***************************************************************************
  *       Container Styles                                                                  
  ***************************************************************************/
@@ -123,8 +130,6 @@ body {
 
 }
 
-
-
 .container img {
   width: 100%;
   height: auto;
@@ -154,13 +159,13 @@ body {
 
   position: relative; 
   height: 5vh;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   
 }
 
@@ -300,7 +305,12 @@ body {
   font-family: "Inter-Regular", Helvetica;
   
   /*font-weight: 300;*/
-  font-size: clamp(14px, 3vw, 32px);  /* responsive font */
+  /*font-size: clamp(14px, 3vw, 32px);  /* responsive font */
+}
+
+.main-nav-link-fixed{
+    /*font-weight: 300;*/
+    font-size: clamp(14px, 3vw, 32px);  /* responsive font */
 }
 
 .main-nav-link:hover,
@@ -406,7 +416,7 @@ body {
   font-weight: 300;
   font-size: clamp(14px, 2vw, 24px);
   color: #000000;
-
+  text-align: justify;
 }
 
 .story-text-columns {
