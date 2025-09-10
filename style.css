@@ -404,7 +404,7 @@ body {
 .story-text-columns p{
   font-family: "Inter-Regular", Helvetica;
   font-weight: 300;
-  font-size: clamp(12px, 2vw, 24px);
+  font-size: clamp(14px, 2vw, 24px);
   color: #000000;
 
 }
