@@ -417,6 +417,7 @@ body {
   font-size: clamp(14px, 2vw, 24px);
   color: #000000;
   text-align: justify;
+  line-height: 1.1;
 }
 
 .story-text-columns {
@@ -511,4 +512,7 @@ body {
     column-count: 1;
   }
 
+  .story-text-columns p{
+    line-height: 1.25;
+  }
 }
