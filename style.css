@@ -398,7 +398,7 @@ body {
 .story-text {
   font-family: "Inter-Regular", Helvetica;
   font-weight: 300;
-  font-size: clamp(16px, 7vw, 28px);
+  font-size: clamp(20px, 3vw, 28px);
   color: #000000;
   text-align: left;
 }
@@ -515,4 +515,13 @@ body {
   .story-text-columns p{
     line-height: 1.25;
   }
+
+    .main-nav-list {
+    gap: 0.25rem;
+  }
+  .main-nav-link {
+    padding: 0.5rem 0.3rem;
+    font-size: 14px;
+  }
+
 }
