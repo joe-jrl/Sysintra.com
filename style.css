@@ -467,8 +467,8 @@ body {
 
 .quote {
 
-  text-shadow: 0px 4px 4px #00000040;
-  font-family: "Khula-Regular", Helvetica;
+  /*text-shadow: 0px 4px 4px #00000040;*/
+  font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
   color: #000000;
   font-size: clamp(12px, 3vw, 32px);
