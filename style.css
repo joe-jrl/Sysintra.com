@@ -1,5 +1,3 @@
-
-
 /***************************************************************************
  *       Global Styles                                                                  
  ***************************************************************************/
@@ -29,22 +27,91 @@ body {
 
 }
 
-/* Home Page image box*/
+/***************************************************************************
+ *       Home Page Hero Styles                                                                  
+ ***************************************************************************/
+
 .home-hero {
-
-  display: flex;
-  justify-content: center; /* horizontally */
-  align-items: center;    /* vertically */
-
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
+.home-hero-inner {
+  width: 60vw;
+  max-width: 1024px;
+  position: relative;
 }
 
 .home-image {
-  max-width: 1024px;   /* never bigger than 1024px */
-  width: 100%;         /* scale responsively */
-  height: auto;        /* preserve aspect ratio */
-  display: block;      /* remove inline spacing */
+  width: 100%;
+  height: auto; /* preserves intrinsic aspect ratio */
+  display: block;
+  border-radius: 8px;
+}
+
+.home-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* right-align children */
+  justify-content: flex-start; /* top align children */
+  color: #000; /* make overlay text black */
+  text-shadow: none; /* remove white text shadow */
+  padding: 2rem;
+  box-sizing: border-box;
+  padding-right: 10%; /* 10% margin from right edge */
+  padding-top: 10%; /* 10% margin from top edge */
+  text-align: right; /* ensure multiline text is right-aligned */
+}
+
+.home-hero-text {
+  margin: 0;
+  font-family: 'Playfair Display', serif, bold;
+  font-size: 6vw;
+  font-weight: 600;
+  color: #000; /* ensure heading text is black */
+}
+
+.home-hero-sub {
+  /*max-width: 36rem;*/
+  max-width: 40vw;
+  text-align: right; /* right-align subtitle */
+  margin-top: 1.5rem;
+  font-family: 'helvetica', sans-serif;
+  font-size: 2vw;
+  color: #000; /* subtitle in black */
+}
+
+/* Generic overlay helper in case other pages use different overlay class names */
+.hero-overlay,
+.overlay,
+.about-hero-overlay {
+  color: #000;
+  text-shadow: none;
+  text-align: right;
+  align-items: flex-end;
+}
+
+@media (max-width: 900px) {
+  .home-hero-inner { width: 80vw; }
+  .home-hero-text { font-size: 2rem; }
+}
+@media (max-width: 600px) {
+  .home-hero-inner { width: 90vw; }
+  .home-hero-text { font-size: 1.5rem; }
+  .home-hero-sub { font-size: 0.95rem; }
+  .home-hero-overlay {
+    padding-right: 5%; /* smaller right margin on small screens */
+    padding-left: 1rem;
+    align-items: center; /* center on mobile for better readability */
+    justify-content: center; /* center vertically on mobile */
+    text-align: center;
+  }
 }
 
 /***************************************************************************
@@ -79,8 +146,9 @@ body {
   background-repeat: no-repeat; 
 }
 
+/* Bread Backgroud */
 .bread-background {
-  background-image: url("img/bread-background.svg");
+  /*background-image: url("img/bread-background.svg");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
