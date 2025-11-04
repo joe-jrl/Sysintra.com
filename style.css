@@ -98,13 +98,13 @@ body {
 }
 
 @media (max-width: 900px) {
-  .home-hero-inner { width: 80vw; }
-  .home-hero-text { font-size: 4vw; }
+  .home-hero-inner { width: 70vw; }
+  .home-hero-text { font-size: 6vw; }
 }
 @media (max-width: 600px) {
   .home-hero-inner { width: 90vw; }
   .home-hero-text { font-size: 6vw; }
-  .home-hero-sub { font-size: 3vw; }
+  .home-hero-sub { font-size: 3vw; max-width: 60vw; }
   .home-hero-overlay {
     padding-right: 5%; /* smaller right margin on small screens */
     padding-left: 1rem;
