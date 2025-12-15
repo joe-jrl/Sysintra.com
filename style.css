@@ -50,6 +50,15 @@ body {
   border-radius: 8px;
 }
 
+/* Gallery-specific image style: copied from .home-image as a starter */
+.gallery-image {
+  width: 100%;
+  height: auto; /* preserves intrinsic aspect ratio */
+  display: block;
+  border-radius: 8px;
+  padding: 5px;
+}
+
 .home-hero-overlay {
   position: absolute;
   top: 0;
