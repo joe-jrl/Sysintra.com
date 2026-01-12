@@ -1,0 +1,10 @@
+# Ignore everything by default
+*
+
+# Allow the site folder and its contents
+!site/
+!site/**
+
+# Allow the .gitignore itself
+!.gitignore
+!buildspec.yml
