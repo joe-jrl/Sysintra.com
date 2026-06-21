@@ -1,0 +1,18 @@
+aws_region     = "eu-west-1"
+aws_account_id = "123456789012"
+
+codebuild_role_name    = "codebuild-example-CloudFrontInvalidation-service-role"
+codebuild_project_name = "example-CloudFrontInvalidation"
+
+production_bucket_name     = "example.com"
+production_distribution_id = "EXAMPLE"
+artifact_bucket_name       = "codepipeline-eu-west-1-example"
+
+policy_path = "/service-role/"
+
+tags = {
+  Environment = "Production"
+  Project     = "example"
+  Purpose     = "CodeBuild Production Permissions"
+  CreatedBy   = "Terraform"
+}

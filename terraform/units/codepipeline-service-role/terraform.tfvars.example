@@ -1,0 +1,21 @@
+aws_region     = "eu-west-1"
+aws_account_id = "123456789012"
+
+pipeline_name = "example-pipeline"
+role_path     = "/service-role/"
+
+production_bucket_name = "example.com"
+artifact_bucket_name   = "codepipeline-eu-west-1-example"
+
+codeconnection_arn = "arn:aws:codeconnections:eu-west-1:123456789012:connection/example"
+codeconnection_id  = "example"
+
+production_codebuild_project_name  = "example-CloudFrontInvalidation"
+site_builder_codebuild_project_name = "example-site-builder"
+
+tags = {
+  Environment = "Production"
+  Project     = "example"
+  Purpose     = "CodePipeline Service Role"
+  CreatedBy   = "Terraform"
+}

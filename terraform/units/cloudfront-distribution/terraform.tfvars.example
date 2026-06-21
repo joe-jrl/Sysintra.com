@@ -1,0 +1,18 @@
+aws_region          = "eu-west-1"
+domain_name         = "example.com"
+aliases             = ["example.com", "www.example.com"]
+bucket_name         = "example.com"
+bucket_region       = "eu-west-1"
+acm_certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/example"
+
+default_root_object = "index.html"
+enabled             = true
+price_class         = "PriceClass_All"
+http_version        = "http2"
+ipv6_enabled        = true
+cache_policy_id     = "658327ea-f89d-4fab-a63d-7e88639e58f6"
+
+tags = {
+  project     = "example.com"
+  environment = "production"
+}

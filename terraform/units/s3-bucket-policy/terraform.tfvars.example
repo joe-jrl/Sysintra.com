@@ -1,0 +1,4 @@
+aws_region                  = "eu-west-1"
+bucket_name                 = "example.com"
+bucket_arn                  = "arn:aws:s3:::example.com"
+cloudfront_distribution_arn = "arn:aws:cloudfront::123456789012:distribution/EXAMPLE"

@@ -1,0 +1,20 @@
+aws_region = "eu-west-1"
+
+pipeline_name             = "example-pipeline"
+pipeline_service_role_arn = "arn:aws:iam::123456789012:role/service-role/AWSCodePipelineServiceRole-eu-west-1-example-pipeline"
+
+production_bucket_name             = "example.com"
+production_codebuild_project_name  = "example-CloudFrontInvalidation"
+site_builder_codebuild_project_name = "example-site-builder"
+
+artifact_bucket_name = "codepipeline-eu-west-1-example"
+codeconnection_arn   = "arn:aws:codeconnections:eu-west-1:123456789012:connection/example"
+source_repo          = "owner/repo"
+source_branch        = "main"
+
+tags = {
+  Environment = "Production"
+  Project     = "example"
+  Purpose     = "Production Deployment Pipeline"
+  CreatedBy   = "Terraform"
+}

@@ -1,0 +1,7 @@
+aws_region    = "eu-west-1"
+bucket_name   = "www.example.com"
+force_destroy = false
+
+bucket_tags = {
+  site = "example.com"
+}

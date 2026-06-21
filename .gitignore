@@ -1,5 +1,7 @@
 # Ignore everything by default
 *
+.DS_Store
+**/.DS_Store
 
 # Allow the site folder and its contents
 !site/
@@ -7,4 +9,14 @@
 
 # Allow the .gitignore itself
 !.gitignore
+!AGENTS.md
 !buildspec.yml
+
+# Allow Terraform source while ignoring generated local state and caches
+!terraform/
+!terraform/**
+terraform/**/.terraform/
+terraform/**/*.tfstate
+terraform/**/*.tfstate.*
+terraform/**/*.tfplan
+terraform/**/*.auto.tfvars
