@@ -1,0 +1,47 @@
+.container-base > main {
+  width: 80%;
+  position: static;
+}
+
+.container-base > main > article > header {
+  width: 100%;
+  height: auto;
+  font-size: clamp(32px, 7vw, 48px);
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: left;
+  position: static;
+}
+
+.container-base > main > article > section {
+  text-align: left;
+  column-gap: 2rem;
+  column-count: 2;
+}
+
+.container-base > main > article > section h2 {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: clamp(18px, 3vw, 32px);
+  color: #000000;
+}
+
+.container-base > main > article > section p {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 300;
+  font-size: clamp(14px, 2vw, 24px);
+  color: #000000;
+  text-align: justify;
+  line-height: 1.1;
+}
+
+@media (max-width: 600px) {
+  .container-base > main > article > section {
+    column-count: 1;
+  }
+
+  .container-base > main > article > section p {
+    line-height: 1.25;
+  }
+}

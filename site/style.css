@@ -135,7 +135,7 @@ body {
   margin: 0 auto;
 }
 
-/* general background container sylyes that are used across all the pages*/
+/* Page-level background and theme surface. Retain until the final migration stage. */
 .background-base {
   min-height: 100vh;
   width: 100%;
@@ -191,6 +191,7 @@ body {
   margin: 0 auto; /* balances the left and right margins to center the elements in the container*/
 }
 
+/* Page flow and alignment wrapper inside background-base. Retain until the final migration stage. */
 .container-base{
   display: flex;
   flex-direction: column;
