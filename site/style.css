@@ -135,6 +135,7 @@
 }
 
 .roots-background {
+  /* Retained story background for design review: img/roots-background.svg */
   background-image: url("img/roots-background.svg");
   background-size: cover;
   background-position: center;
@@ -142,6 +143,7 @@
 }
 
 .mama-background {
+  /* Retained story background for design review: img/mama-background.svg */
   background-image: url("img/mama-background.svg");
   background-size: cover;
   background-position: center;
