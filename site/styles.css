@@ -1,4 +1,6 @@
 @import url("globals.css");
-@import url("styles/legacy_styles.css");
 @import url("styles/page-styles.css");
+@import url("styles/about-styles.css");
+@import url("styles/home-styles.css");
+@import url("styles/gallery-styles.css");
 @import url("styles/article-styles.css");

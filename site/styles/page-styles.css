@@ -104,6 +104,35 @@
   align-items: center;
 }
 
+.container-base > main.page-description {
+  width: 60vw;
+  max-width: 600px;
+}
+
+.container-base > main.page-description h1 {
+  width: 100%;
+  height: auto;
+  font-size: clamp(32px, 7vw, 48px);
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.container-base > main.page-description p {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 300;
+  font-size: clamp(14px, 2vw, 24px);
+  color: #000000;
+  text-align: justify;
+  line-height: 1.25;
+}
+
+.container-base > main.about-description {
+  margin-top: 0;
+}
+
 @media (max-width: 600px) {
   .site-nav > ul {
     gap: 0.25rem;
@@ -112,5 +141,9 @@
   .site-nav > ul > li > a {
     padding: 0.5rem 0.3rem;
     font-size: 14px;
+  }
+
+  .container-base > main.page-description {
+    width: 80%;
   }
 }
