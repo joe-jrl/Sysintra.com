@@ -36,6 +36,15 @@
   line-height: 1.1;
 }
 
+.story-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
 @media (max-width: 600px) {
   .container-base > main > article > section {
     column-count: 1;

@@ -120,7 +120,7 @@
 
 /* About Me Backgroud */
 .about-me-background {
-  background-image: url("img/about-me-background.svg");
+  background-image: url("../img/about-me-background.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat; 
@@ -128,7 +128,7 @@
 
 /* Bread Backgroud */
 .bread-background {
-  /*background-image: url("img/bread-background.svg");*/
+  /*background-image: url("../img/bread-background.svg");*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
@@ -136,7 +136,7 @@
 
 .roots-background {
   /* Retained story background for design review: img/roots-background.svg */
-  background-image: url("img/roots-background.svg");
+  background-image: url("../img/roots-background.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
@@ -144,7 +144,7 @@
 
 .mama-background {
   /* Retained story background for design review: img/mama-background.svg */
-  background-image: url("img/mama-background.svg");
+  background-image: url("../img/mama-background.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; 
@@ -485,8 +485,8 @@
 
 }
 
-/* Inline images inside story */
-.story-image img {
+/* Legacy inline images inside story */
+.legacy-story-image img {
   max-width: 100%;
   height: auto;
   margin: 1rem 0;
@@ -494,7 +494,7 @@
   break-inside: avoid;   /* ✅ prevent column breaks through image */
 }
 
-.story-image {
+.legacy-story-image {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -553,7 +553,7 @@
 
   /* About Me Backgroud */
   .about-me-background {
-    background-image: url("img/about-me-background.svg");
+    background-image: url("../img/about-me-background.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
