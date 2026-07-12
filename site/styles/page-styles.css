@@ -104,12 +104,18 @@
   align-items: center;
 }
 
+.container-base > main {
+  width: 80%;
+  position: static;
+}
+
 .container-base > main.page-description {
   width: 60vw;
   max-width: 600px;
 }
 
-.container-base > main.page-description h1 {
+.container-base > main > h1,
+.container-base > main > article > header {
   width: 100%;
   height: auto;
   font-size: clamp(32px, 7vw, 48px);
@@ -120,7 +126,8 @@
   text-align: left;
 }
 
-.container-base > main.page-description p {
+.container-base > main.page-description p,
+.container-base > main > article > section p {
   font-family: "Inter-Regular", Helvetica;
   font-weight: 300;
   font-size: clamp(14px, 2vw, 24px);

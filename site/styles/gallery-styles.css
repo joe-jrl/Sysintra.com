@@ -3,17 +3,6 @@
   max-width: 600px;
 }
 
-.container-base > main.gallery-page h1 {
-  width: 100%;
-  height: auto;
-  font-size: clamp(32px, 7vw, 48px);
-  font-weight: 300;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-bottom: 1em;
-  text-align: left;
-}
-
 .gallery-images img {
   width: 100%;
   height: auto;
