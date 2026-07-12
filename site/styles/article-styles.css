@@ -8,7 +8,7 @@
   font-family: "Inter-Regular", Helvetica;
   font-weight: 400;
   font-size: clamp(18px, 3vw, 32px);
-  color: #000000;
+  color: var(--color-text);
 }
 
 .story-image {
