@@ -130,10 +130,10 @@
 .container-base > main > article > section p {
   font-family: "Inter-Regular", Helvetica;
   font-weight: 300;
-  font-size: clamp(14px, 2vw, 24px);
+  font-size: clamp(16px, 2vw, 22px);
   color: var(--color-text);
   text-align: justify;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 .container-base > main.about-description {
@@ -152,5 +152,10 @@
 
   .container-base > main.page-description {
     width: 80%;
+  }
+
+  .container-base > main.page-description p,
+  .container-base > main > article > section p {
+    text-align: left;
   }
 }
